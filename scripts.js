@@ -35,7 +35,7 @@ const putDataInHtml = async ({ characters }) => {
         <span class="c-status ">${character.status}</span>
         <p>${character.gender}</p>
         <p>${character.species}</p>
-        <a class="details" href="/char-detail.html?id=${character.id}&page=${defaultFilters.page}&name=${character.name}&species=${character.species}&gender=${character.gender}&status=${character.status}">Detalhes</a>
+        <a class="details" href="char-detail.html?id=${character.id}&page=${defaultFilters.page}&name=${character.name}&species=${character.species}&gender=${character.gender}&status=${character.status}">Detalhes</a>
       </div>
     `
   });
