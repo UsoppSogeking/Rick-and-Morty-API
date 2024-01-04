@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    line-height: 1.6;
+    padding: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.search-container input {
+    max-width: 200px;
+}
+
+.filter {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.search-results {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-result, .result-style {
+    margin-top: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #FFF;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-result img, .result-style img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search-result span {
+    font-size: 20px;
+    color: #333;
+    display: block;
+    text-transform: capitalize;
+}
+
+.pages {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.btn-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.next, .prev, .search-button{
+    border: none;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: #FFF;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.search-page {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.input-page {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    max-width: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.details {
+    text-decoration: none;
+    color: darkcyan;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .search-results {
+        padding: 20px;
+    }
+
+    .search-result {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-result {
+        width: 100%;
+    }
+
+    .pages {
+        flex-direction: column;
+    }
+
+}

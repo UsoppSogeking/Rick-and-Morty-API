@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Rick and Morty API</h1>
+
+    <div class="search-container">
+        <h3>Busque por um nome: </h3>
+        <input type="text" id="search" placeholder="Filter by name..." class="filter">
+    </div>
+
+    <h3>Faça um filtro de seu personagem: </h3>
+
+    <div class="filters">
+        <select name="species" id="species" class="filter">
+            <option value="" default>Species</option>
+            <option value="animal">Animal</option>
+            <option value="alien">Alien</option>
+            <option value="disease">Doença</option>
+            <option value="unknown">Desconhecido</option>
+            <option value="human">Humano</option>
+            <option value="humanoid">Humanoide</option>
+            <option value="mythological">Mitologico</option>
+            <option value="poopybutthole">Poopybutthole</option>
+            <option value="robot">Robô</option>
+        </select>
+
+        <select name="gender" id="gender" class="filter">
+            <option value="">Gênero</option>
+            <option value="female">Feminino</option>
+            <option value="male">Masculino</option>
+            <option value="genderless">Sem Gênero</option>
+            <option value="unknown">Desconhecido</option>
+        </select>
+
+        <select name="status" id="status" class="filter">
+            <option value="">Status</option>
+            <option value="alive">Vivo</option>
+            <option value="dead">Morto</option>
+            <option value="unknown">Desconhecido</option>
+        </select>
+    </div>
+
+    <div class="search-results"></div>
+
+    <div class="pages">
+        <div class="btn-container">
+            <button class="prev hide">Prev</button>
+            <button class="next">Next</button>
+        </div>
+
+        <div class="search-page">
+            <input type="number" class="input-page" min="1" max="42">
+            <button class="search-button">Buscar</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
